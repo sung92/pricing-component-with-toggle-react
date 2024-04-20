@@ -77,7 +77,7 @@ function Cards({ checkbox }) {
 
 function Card({ plan }) {
   return (
-    <div className="rounded-[10px] bg-[#ffff] p-[48px]">
+    <div className="rounded-[10px] bg-[#ffff] p-[48px] desktop:min-w-[23.4rem]">
       <h2 className="text-[18px] text-neutral-grayishblue">{plan.plan}</h2>
       <p className="flex items-center justify-center gap-[4px] border-b-[2px] border-solid border-neutral-vlgrayishblue pb-[8px] text-[72px] text-neutral-dgrayishblue">
         <span className="text-[40px]">$</span>
@@ -94,7 +94,7 @@ function Card({ plan }) {
           Send up to {plan.upload} GB
         </li>
       </ul>
-      <a className="bg-gradient-to-135 hover:bg-gradient-to-135-white mt-[32px] block cursor-pointer rounded-[6px] p-[12px] text-[13px] uppercase tracking-[1px] text-[#ffff] hover:text-gradients-purple hover:outline hover:outline-1 hover:outline-gradients-purple">
+      <a className="mt-[32px] block cursor-pointer rounded-[6px] bg-gradient-to-135 p-[12px] text-[13px] uppercase tracking-[1px] text-[#ffff] hover:bg-gradient-to-135-white hover:text-gradients-purple hover:outline hover:outline-1 hover:outline-gradients-purple">
         Learn More
       </a>
     </div>
@@ -103,7 +103,7 @@ function Card({ plan }) {
 
 function CardPro({ plan }) {
   return (
-    <div className="bg-gradient-to-135 rounded-[10px] bg-[#ffff] p-[48px] desktop:scale-y-[1.08]">
+    <div className="rounded-[10px] bg-[#ffff] bg-gradient-to-135 p-[48px] desktop:min-w-[23.4rem] desktop:scale-y-[1.08]">
       <h2 className="text-[18px] text-[#ffff]">{plan.plan}</h2>
       <p className="flex items-center justify-center gap-[4px] border-b-[2px] border-solid border-neutral-lgrayishblue pb-[8px] text-[72px] text-[#fff]">
         <span>$</span>
@@ -120,7 +120,7 @@ function CardPro({ plan }) {
           Send up to {plan.upload} GB
         </li>
       </ul>
-      <a className="bg-gradient-to-135-white hover:bg-gradient-to-135 mt-[32px] block cursor-pointer rounded-[6px] p-[12px] text-[13px] uppercase tracking-[1px] text-gradients-purple hover:text-gradients-purple hover:outline hover:outline-1 hover:outline-[#ffff]">
+      <a className="mt-[32px] block cursor-pointer rounded-[6px] bg-gradient-to-135-white p-[12px] text-[13px] uppercase tracking-[1px] text-gradients-purple hover:bg-gradient-to-135 hover:text-gradients-purple hover:outline hover:outline-1 hover:outline-[#ffff]">
         Learn More
       </a>
     </div>
